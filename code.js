@@ -1,8 +1,11 @@
 // partie joueur
 let playerInput = prompt("Papier, caillou ou ciseau ?", "papier");
-let playerSelection = function() {
+let playerSelection = function () {
   return playerInput.toLowerCase();
 }
+if(playerSelection() !== "papier" && playerSelection() !== "caillou" && playerSelection() !== "ciseau") {
+  alert("Mot non reconnu ! Fais attention à l'orthographe de caillou, papier ou ciseau")
+};
 console.log("toi : " + playerSelection())
 
 // partie ordinateur
